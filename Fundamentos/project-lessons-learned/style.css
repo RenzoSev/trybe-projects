@@ -1,0 +1,287 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background: rgb(253, 251, 251);
+  font-family: Karla, sans-serif;
+  line-height: 1.4;
+  color: rgb(22, 22, 22);
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+  background: rgb(22, 22, 22);
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(253, 64, 42);
+  outline: 1px solid rgb(253, 64, 42);
+}
+
+body::-webkit-scrollbar:hover {
+  background: rgb(41, 41, 41);
+}
+
+a {
+  text-decoration: none;
+  color: rgb(146, 43, 34);
+  margin: 0 15px;
+  font-size: 1em;
+  transition: all 0.3s;
+}
+
+a:hover {
+  color: rgb(253, 64, 42);
+}
+
+li {
+  list-style: none;
+}
+
+h1 {
+  font-family: Montserrat, sans-serif;
+  color: rgb(253, 64, 42);
+}
+
+.container {
+  min-height: 100vh;
+  width: 100%;
+}
+
+#principal {
+  background: rgb(104, 151, 117);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.main-title {
+  text-transform: uppercase;
+}
+
+.main-title-lessons {
+  font-size: 4em;
+  font-style: italic;
+}
+
+.main-title-renzo {
+  font-size: 4em;
+  color: rgb(146, 43, 34);
+}
+
+.arrow {
+  font-size: 28px;
+  color: rgb(22, 22, 22);
+  display: inline-block;
+  margin-left: 50%;
+  margin-top: 15px;
+  animation: bounce 2s ease infinite;
+  transition: all 0.3s;
+}
+
+.arrow:hover {
+  color: rgb(54, 54, 54);
+}
+
+@keyframes bounce {
+
+  0% , 25% , 55% , 75% , 100% {
+    transform: translateY(0);
+  }
+
+  45% {
+    transform: translateY(-20px);
+  }
+
+  65% {
+    transform: translateY(-10px);
+  }
+
+  85% {
+    transform: translateY(-5px);
+  }
+}
+
+#cabecalho {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: auto;
+  background: rgb(22, 22, 22);
+}
+
+.cabecalho {
+  display: flex;
+  flex-wrap: wrap;
+  background: rgb(22, 22, 22);
+  margin: 0 auto;
+  max-width: 960px;
+  align-items: center;
+  justify-content: space-around;
+  padding: 16px 0;
+}
+
+#titulo {
+  color: rgb(253, 64, 42);
+  margin: 0 15px;
+  font-size: 1.5em;
+  font-family: Montserrat, sans-serif;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+#titulo:hover {
+  border-bottom: 2px solid rgb(253, 64, 42);
+}
+
+#navegacao {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 15px;
+}
+
+.licoes {
+  max-width: 66.6%;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+#licoes-title {
+  font-size: 4em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.licoes-table {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 16px;
+  justify-content: space-evenly;
+}
+
+.licoes-lista {
+  background: rgb(173, 129, 116);
+  text-align: center;
+  padding: 16px;
+  font-size: 1.3em;
+  line-height: 1.5;
+  border-radius: 3%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  box-shadow: 16px 25px 0 0 rgb(104, 151, 117);
+}
+
+.licoes-lista p {
+  font-size: 1.2em;
+  padding: 4px;
+  color: rgb(253, 251, 251);
+}
+
+#aprendizado {
+  border: 2px solid rgb(253, 64, 42);
+  max-width: 66%;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding: 40px;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#aprendizado:hover {
+  background: rgb(236, 236, 236);
+  border: 2px solid rgb(255, 25, 0);
+}
+
+#minha_foto {
+  max-width: 184px;
+  border-radius: 10%;
+  box-shadow: 10px 12px 0 0 rgb(146, 43, 34);
+  margin: 0 auto;
+  transition: all 0.5s;
+}
+
+#aprendizado-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.lados {
+  margin-top: 18px;
+  text-align: center;
+}
+
+.lado-esquerdo {
+  max-width: 534px;
+  font-size: 1.2em;
+  border-left: solid 2px rgb(173, 129, 116);
+}
+
+.lado-direito {
+  max-width: 215px;
+  border-left: solid 2px rgba(104, 151, 117, 0.699);
+  transition: all 0.4s;
+}
+
+.lado-direito:hover {
+  border-left: solid 2px rgb(104, 151, 117);
+}
+
+.lado-direito p {
+  font-style: italic;
+  padding-left: 4px;
+  color: rgba(22, 22, 22, 0.774);
+  transition: all 0.4s;
+}
+
+.lado-direito p:hover {
+  color: rgb(22, 22, 22);
+}
+
+#rodape {
+  background: rgb(22, 22, 22);
+  text-align: center;
+  margin-top: 35px;
+}
+
+.links {
+  margin-top: 10px;
+  font-size: 1.2em;
+}
+
+.git-hub-link {
+  margin-right: 15px;
+}
+
+.linkedin-link {
+  margin-left: 15px;
+}
+
+.copyright {
+  color: red;
+  margin-top: 15px;
+  font-size: 0.6em;
+}
