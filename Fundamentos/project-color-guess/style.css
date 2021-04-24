@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: Teko, sans-serif;
+  color: rgb(34, 34, 34);
+}
+
+body {
+  background-color: rgb(240, 242, 245);
+}
+
+button {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  margin-top: 7.5px;
+  border: 0.16em solid rgba(255, 255, 255, 0);
+  border-radius: 2em;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-align: center;
+  transition: all 0.3s;
+  background-color: rgb(170, 231, 194);
+  cursor: pointer;
+  font-size: 1em;
+  outline: unset;
+}
+
+button:hover {
+  background-color: rgb(196, 196, 196);
+}
+
+#section-title {
+  background-color: rgb(170, 231, 194);
+  padding: 15px;
+}
+
+#title {
+  font-size: 3em;
+  color: snow;
+}
+
+#rgb-color {
+  margin-top: 7.5px;
+}
+
+#rgb-color p {
+  font-size: 1.5em;
+  font-style: italic;
+  margin-top: 15px;
+}
+
+#section-balls {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 15px;
+  max-width: 900px;
+}
+
+.ball {
+  border-radius: 100%;
+  padding: 30px;
+  margin-left: 7.5px;
+  margin-top: 7.5px;
+  box-shadow: 0 1px 3px 1px rgb(0 0 0 / 55%);
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.ball:hover {
+  transform: scale(1.1);
+}
+
+.ball:active {
+  transform: scale(0.9);
+}
+
+#section-paragraphs {
+  margin-top: 15px;
+  font-size: 1.35em;
+}
+
+#answer {
+  font-weight: 300;
+}
+
+#section-btn {
+  margin-top: 15px;
+}
+
+#number-difficulty {
+  font-size: 18px;
+  margin-top: 15px;
+}
+
+/* #number-difficulty::-webkit-inner-spin-button {
+  all: unset;
+  min-width: 21px;
+  min-height: 45px;
+  margin: 17px;
+  background-image: 
+    linear-gradient(to top, transparent 0, transparent 16px, white 16px, white 26px, transparent 26px, transparent 35px, black 35px, blacknp 36px, transparent 36px, transparent 40px),
+    linear-gradient(to right, transparent 0, transparent 10px, black 10px, black 11px, transparent 11px, transparent 21px);
+  transform: rotate(90deg) scale(0.8, 0.9);
+  cursor: pointer;
+} */
+
+#change-difficulty {
+  display: block;
+  margin: 0 auto;
+  margin-top: 7.5px;
+}
